@@ -11,7 +11,17 @@ public class MandelbrotSet{
 			}
 		}
 		
-		
+		for(double i = -2; i<=2;i+=0.05){
+			for(double j = -2; j<=2;j+=0.05){
+				
+				if(itiration(complexField[i][j]>2)){
+					evaluatedField[i][j]=0;
+				}else{
+					evaluatedField[i][j]=1;
+				}
+				
+			}
+		}
 	
 		
 		
