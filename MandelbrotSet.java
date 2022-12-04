@@ -15,9 +15,6 @@ public class MandelbrotSet{
 		
 			}
 		}
-		
-		
-
 				
 		for(int k = 0; k>=80; k++){
 			for(int l = 0; l>=80 l++){
@@ -29,7 +26,12 @@ public class MandelbrotSet{
 			}
 		}
 				
-			
+		for(int k = 0; k>=80; k++){
+			for(int l = 0; l>=80 l++){
+				System.out.print(evaluatedField[k][l]);
+			}
+			System.out.println();
+		}
 		
 		
 		
