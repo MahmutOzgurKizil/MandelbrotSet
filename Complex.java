@@ -16,7 +16,13 @@ public class Complex{
 		return Math.sqrt(Math.pow(getNum(),2)+Math.pow(getComplex(),2));
 	}
 	
-	
-	
+	public Complex squareComplex(){
+		
+		Complex i = new Complex(getNum(),getComplex());
+		setNum(Math.pow(i.getNum(),2)-Math.pow(i.getComplex(),2));
+		setComplex(i.getNum()*i.getComplex()*2);
+		return i;
+		
+	}
 	
 }
