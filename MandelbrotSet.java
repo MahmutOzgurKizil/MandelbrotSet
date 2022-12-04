@@ -2,18 +2,18 @@ public class MandelbrotSet{
 	public static void main(String[] args){
 		
 		
-		Complex[][] complexField= new Complex[161][161];
-		int[][] evaluatedField= new int[161][161];
+		Complex[][] complexField= new Complex[201][201];
+		int[][] evaluatedField= new int[201][201];
 		
-		for(int i = 0; i<=160; i++){
-			for(int j = 0; j<=160;j++){
-				complexField[i][j]= new Complex((double)i/40-2,(double)j/40-2);
+		for(int i = 0; i<=200; i++){
+			for(int j = 0; j<=200;j++){
+				complexField[i][j]= new Complex((double)i/50-2,(double)j/50-2);
 			}
 		}
 		
 				
-		for(int k = 0; k<=160; k++){
-			for(int l = 0; l<=160;l++){
+		for(int k = 0; k<=200; k++){
+			for(int l = 0; l<=200;l++){
 				if(itiration(complexField[k][l],500).distanceToZero()>=2){
 					evaluatedField[k][l]=0;
 				}else{
@@ -23,16 +23,17 @@ public class MandelbrotSet{
 		}
 		
 				
-		for(int k = 0; k<=160; k++){
-			for(int l = 0; l<=160;l++){
+		for(int k = 0; k<=200; k++){
+			for(int l = 0; l<=200;l++){
 				if(evaluatedField[l][k]==0){
 					System.out.print(" ");
 				}
 				else{
-					System.out.print("l");
+					System.out.print("ğ");
 				}
 			}
 			System.out.println();
+			
 		}
 		
 	
