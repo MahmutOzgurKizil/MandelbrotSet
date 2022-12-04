@@ -6,8 +6,8 @@ public class MandelbrotSet{
 		
 		for(double i = -2; i<=2;i+=0.05){
 			for(double j = -2; j<=2;j+=0.05){
-				for(int k = 0; k>=80; k++){
-					for(int l = 0; l>=80;l++){
+				for(int k = 0; k<=80; k++){
+					for(int l = 0; l<=80;l++){
 						complexField[k][l].setNum(i);
 						complexField[k][l].setComplex(j);
 					}
@@ -16,8 +16,8 @@ public class MandelbrotSet{
 			}
 		}
 				
-		for(int k = 0; k>=80; k++){
-			for(int l = 0; l>=80;l++){
+		for(int k = 0; k<=80; k++){
+			for(int l = 0; l<=80;l++){
 				if(itiration(complexField[k][l],100).distanceToZero()>2){
 					evaluatedField[k][l]=0;
 				}else{
@@ -26,8 +26,8 @@ public class MandelbrotSet{
 			}
 		}
 				
-		for(int k = 0; k>=80; k++){
-			for(int l = 0; l>=80;l++){
+		for(int k = 0; k<=80; k++){
+			for(int l = 0; l<=80;l++){
 				System.out.print(evaluatedField[k][l]);
 			}
 			System.out.println();
