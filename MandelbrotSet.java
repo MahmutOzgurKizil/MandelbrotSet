@@ -1,8 +1,16 @@
 public class MandelbrotSet{
 	public static void main(String[] args){
 		
+		
 		Complex[][] complexField= new Complex[81][81];
+		Complex nullPointer = new Complex(0,0);
+		for(int k = 0; k<=80; k++){
+			for(int l = 0; l<=80;l++){
+				complexField[k][l]=nullPointer;
+			}
+		}
 		int[][] evaluatedField= new int[81][81];
+		
 		
 		for(double i = -2; i<=2;i+=0.05){
 			for(double j = -2; j<=2;j+=0.05){

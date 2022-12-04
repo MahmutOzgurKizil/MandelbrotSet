@@ -8,7 +8,7 @@ public class Complex{
 	}
 	
 	public void setNum(double a){ num = a; }
-	public void setComplex(double a){ complex = a; }
+	public void setComplex(double b){ complex = b; }
 	public double getNum(){return num;}
 	public double getComplex(){return complex;}
 	
