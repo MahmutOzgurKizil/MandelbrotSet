@@ -10,9 +10,11 @@ public class Complex{
 	public void setNum(double a){ num = a; }
 	public void setComplex(double a){ complex = a; }
 	public double getNum(){return num;}
-	public dobule getComplex(){return complex;}
+	public double getComplex(){return complex;}
 	
-	
+	public double distanceToZero(){
+		return Math.sqrt(Math.pow(getNum(),2)+Math.pow(getComplex(),2));
+	}
 	
 	
 	
