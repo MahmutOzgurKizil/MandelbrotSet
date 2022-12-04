@@ -2,7 +2,7 @@ public class Complex{
 	private double num;
 	private double complex;
 	
-	public Complex(double a; double b){
+	public Complex(double a, double b){
 		num = a;
 		complex = b;
 	}
