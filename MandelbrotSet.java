@@ -6,22 +6,33 @@ public class MandelbrotSet{
 		
 		for(double i = -2; i<=2;i+=0.05){
 			for(double j = -2; j<=2;j+=0.05){
-				complexField[i][j].setNum(i);
-				complexField[i][j].setComplex(j);
+				for(int k = 0; k>=80; k++){
+					for(int l = 0; l>=80 l++){
+						complexField[k][l].setNum(i);
+						complexField[k][l].setComplex(j);
+					}
+				}
+		
 			}
 		}
 		
-		for(double i = -2; i<=2;i+=0.05){
-			for(double j = -2; j<=2;j+=0.05){
+		
+
 				
-				if(itiration(complexField[i][j]>2)){
-					evaluatedField[i][j]=0;
+		for(int k = 0; k>=80; k++){
+			for(int l = 0; l>=80 l++){
+				if(itiration(complexField[k][l])>2){
+					evaluatedField[k][l]=0;
 				}else{
-					evaluatedField[i][j]=1;
+					evaluatedField[k][l]=1;
 				}
-				
 			}
 		}
+				
+			
+		
+		
+		
 	
 		
 		
