@@ -12,19 +12,24 @@ public class MandelbrotSet{
 		
 		int[][] evaluatedField= new int[81][81];
 		
+		int a=0;
+		int b=0;
+			
 		
-		
-		for(int k = 0; k<=80; k++){
-			for(int l = 0; l<=80;l++){
+		for(int i = 0; i<=80; i++){
+			for(int j = 0; j<=80;j++){
 				
-				complexField[k][l].setNum((double)k/20-2);
-				complexField[k][l].setComplex((double)l/20-2);
-			//	System.out.println(complexField[k][l].getComplex());
+				complexField[i][j]= new Complex((double)i/20-2,(double)j/20-2);
+			//	complexField[i][j].setComplex((double)j/20-2);
+				
+				//System.out.println(complexField[10][j].getComplex());
 			}
+			//System.out.println(complexField[i][0].getComplex());
 		}
 		
-		System.out.println(complexField[60][50].getNum());
-		System.out.println(complexField[60][50].getComplex());
+		//System.out.println(complexField[60][50].getNum());
+		//System.out.println(complexField[63][56].getComplex()); 
+		
 				
 		for(int k = 0; k<=80; k++){
 			for(int l = 0; l<=80;l++){
@@ -35,6 +40,7 @@ public class MandelbrotSet{
 				}
 			}
 		}
+		
 	/*			
 		for(int k = 0; k<=80; k++){
 			for(int l = 0; l<=80;l++){
@@ -43,7 +49,7 @@ public class MandelbrotSet{
 			System.out.println();
 		}
 		
-		*/
+	*/
 		
 	}
 	
