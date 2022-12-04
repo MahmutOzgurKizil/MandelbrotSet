@@ -19,8 +19,8 @@ public class Complex{
 	public Complex squareComplex(){
 		
 		Complex i = new Complex(getNum(),getComplex());
-		i.setNum(Math.pow(i.getNum(),2)+(-1)*Math.pow(i.getComplex(),2));
-		i.setComplex(i.getNum()*i.getComplex()*2);
+		i.setNum(Math.pow(getNum(),2)+(-1)*Math.pow(getComplex(),2));
+		i.setComplex(getNum()*getComplex()*2);
 		return i;
 		
 	}
